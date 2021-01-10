@@ -1,7 +1,8 @@
 
 # Inventry Manager
 
-Node js application to maintain your sales and purchase
+- Node js application to maintain your sales and purchase
+- Detailed Report generation system for daily sales and purchases
 
 ---
 ## Requirements
@@ -57,3 +58,17 @@ If you need to update `npm`, you can make it using `npm`! Cool right? After runn
 ## Simple build for production
 
     $ npm build
+    
+# Preview
+ - Home
+  ![image](https://user-images.githubusercontent.com/40564824/104119979-77152000-5359-11eb-9a18-65a1a4b5fca2.png)
+ - Product
+  ![image](https://user-images.githubusercontent.com/40564824/104120023-b6437100-5359-11eb-946b-bcda540cae85.png)
+  - New Productt
+    ![image](https://user-images.githubusercontent.com/40564824/104120043-cf4c2200-5359-11eb-8ccc-600a178516ae.png)
+ - Sales
+  ![image](https://user-images.githubusercontent.com/40564824/104120056-eb4fc380-5359-11eb-9921-6521248fe5d6.png)
+ - Stock
+  ![image](https://user-images.githubusercontent.com/40564824/104120070-04587480-535a-11eb-9da9-baac5d10cd97.png)
+# Report sample in pdf format
+  - ![image](https://user-images.githubusercontent.com/40564824/104120093-26ea8d80-535a-11eb-9691-cc5622d56f37.png)
