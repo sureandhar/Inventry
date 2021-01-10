@@ -1,0 +1,34 @@
+
+
+<% 
+function quantity(id){
+    var qt1=0;
+    var qt2=0;
+    for(var j=0;j < user.length;j++){
+        
+        if(id == user[j].productid){
+            qt1+=user[j].quantity;
+        }
+    }
+    for(var k=0;k < sale.length;k++){
+        
+        if(id == sale[k].productid){
+            qt2+=sale[k].quantity;
+        }
+    }
+
+    return qt1-qt2;
+}
+for(var i=0;i < users.length;i++){ 
+    
+    %>
+
+    
+    <tr>
+        <td><%= i+1 %></td>
+        <td><%= users[i].productid %></td>
+        <td><%= users[i].productname %></td>
+        <td><%= quantity(users[i].productid ) %></td>
+    </tr>
+
+<% } %>

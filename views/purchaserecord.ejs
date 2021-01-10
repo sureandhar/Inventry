@@ -1,0 +1,43 @@
+<!-- Header -->
+<%- include('include/_header')%>
+<!-- /Header -->
+
+<!-- Main -->
+
+<main class="main">
+    <div class="product new">
+        <a href="/purchaseform" class="product-brand">New Purchase <i class="fas fa-cart-plus"></i></a>
+        <a href="/" class="product-brand">Home <i class="fas fa-home"></i></a>
+    </div>
+    <div class="form-title">
+        <h3 class="form-title text">Purchase History</h3>
+     </div> 
+     
+     <form action="/" method="post">
+        <table class="table">
+            <thead class="thead-dark">
+                <tr>
+                    <th>#</th>
+                    <th>Date</th>
+                    <th>id</th>
+                    <th>Productname</th>
+                    <th>Vendorname</th>
+                    <th>Vendoraddress</th>
+                    <th>Quantity</th>
+                    <th>Rate</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <%- include('include/_showpurchaserecord')%>
+            </tbody>
+        </table>
+    </form>
+
+</main>
+
+<!-- /Main -->
+
+<!-- Footer -->
+<%- include('include/_footer')%>
+<!-- /Footer -->

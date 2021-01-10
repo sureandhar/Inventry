@@ -1,0 +1,28 @@
+{
+  "name": "inventry",
+  "version": "1.0.0",
+  "description": "Inventry management system using mongodb",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "keywords": [
+    "mongodb",
+    "inventry"
+  ],
+  "author": "sureandhar",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "body-parser": "^1.19.0",
+    "dotenv": "^8.2.0",
+    "ejs": "^3.1.5",
+    "express": "^4.17.1",
+    "express-favicon": "^2.0.1",
+    "html-pdf": "^2.2.0",
+    "mongoose": "^5.11.9",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.6"
+  }
+}

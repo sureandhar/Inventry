@@ -1,0 +1,16 @@
+crete server.js
+npm init
+npm i express morgan body-parser axios dotenv nodemon ejs mongoose
+
+create inventry file(.bat)[paste conten inside inventry file: pm2 start C:\Inventry\server.js]
+copy inventry file(batch file)  to below location
+C:\Users\Administrator\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup
+
+// * commands * \\
+
+To start manually : open cmd and run npm start server
+
+To stop server : use => pm2 kill
+To monitor server with log : use => pm3 monit
+
+\\ ************ //

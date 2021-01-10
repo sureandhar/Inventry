@@ -1,0 +1,23 @@
+
+<% for(var i=0;i < users.length;i++){ %>
+    <form action="/api/sales" method="post" id="add_sales">
+    <tr>
+        <td><%= i+1 %></td>
+        <input type="hidden" name="pid" value="<%= users[i].productid %>">
+        <td><%= users[i].productid %></td>
+        <input type="hidden" name="name" value="<%= users[i].productname %>">
+        <td><%= users[i].productname %></td>
+        <td class="box">
+            <input type="hidden" name="id" value="<%= users[i]._id %>">
+            <input  type="text" name="pqty" value="<%= users[i].quantity %>">
+        </td>
+        <td class="action">
+            <div class="from-group">
+                <button type="submit" class="btn text-dark update"><i class="fas fa-check"></i></button>
+            </div>
+        </td>
+    </tr>
+
+    </tr>
+</form>
+    <% } %>

@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow&family=PT+Sans&display=swap');
+
+:root{
+    --dark:#2b2d42;
+    --ligth:#adb5bd;
+    --border:#dee2e6;
+    --border-btn:#edf2f4;
+}
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    font-family: 'PT Sans', sans-serif;
+}
+
+.header{
+    background-color: #06d6a0;
+    padding: 1em 0;
+    width: 100%;
+
+}
+.header .title{
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Barlow', sans-serif;
+}
+.header .title a{
+    color: white;
+    font-family: 'Barlow', sans-serif;
+}
+.container{
+    background-color: var(--ligth);
+    margin: 3em;
+
+
+}
+.item{
+    padding: 1.5em;
+}
+.item a{
+    padding: .5em;
+    border: 1px solid var(--border);
+    border-radius: .20em;
+}
+.item a:hover{
+    background-color: var(--dark);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.nav-brand{
+    font-size: 1.2em;
+}
+.product{
+    margin: 2em;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* background-color: var(--dark); */
+}
+.product a{
+    font-weight: bold;
+}
+.product-brand{
+    margin: .2em;
+}
+.product-brand:hover{
+    border: none;
+    cursor: pointer;
+    color:   #06d6a0;
+    font-weight: bold;
+}
+
+
+.main{
+    margin: 5em 10em auto 10em;
+    font-family: 'Barlow', sans-serif;
+}
+
+table{
+    border-spacing: 0px;
+    width: 100%;
+}
+table td{
+    text-align: center;
+}
+
+.table td, .table th{
+    padding: .75em;
+    vertical-align: top;
+    text-align: center;
+    border-top: 1px solid var(--border-btn);
+}
+.table td > a.btn{
+    padding: .3em 1em;
+    font-size: 1.1em;
+    margin: 0.2em;
+    border: 1px solid black;
+}
+/* action style */
+.table .action{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+}
+/* table button */
+.table .action .btn {
+
+    display: flex;
+    align-items: center;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: .2em;
+    background-color: #16db93;
+    border: none;
+    font-family: 'PT Sans', sans-serif;
+    width: 100%;
+    padding:.9em 1em;
+    
+}
+.table .action .btn:hover{
+
+    background-color: var(--dark);
+    color: var(--border);
+}
+
+.table td > a.btn:hover{
+    background-color: lightcoral;
+    border: none;
+    color: white;
+    
+}
+/* table input box style */
+.table .box input[type="text"] {
+width:100%;
+padding: .6em 1em;
+margin: .5em 0;
+border: 1px solid var(--border-btn);
+font-family: 'Barlow', sans-serif;
+font-size: 1em;
+border-radius: .2em;
+}
+
+.table tr:hover{
+    background-color: #06d6a0;
+    color: white;
+}
+.table tr:hover td >a{
+    box-shadow: none;
+}
+.table .thead-dark th{
+    color: #fff;
+    background-color: var(--dark);
+    border-color: #323830;
+}
+
+.form-group{
+    display: inline-block;
+}
+.form-title{
+    color: rgba(5, 0, 100, 0.829);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 0 2em 0;
+    border: 1px solid var(--border);
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    /* background-color: var(--border); */
+}
+.form-title .text{
+    border: none;
+}
+.form-div{
+    padding: 1.5em;
+    margin: 1.5em;
+    border: 1px solid var(--border);
+    box-shadow: 0px 2px 5px var(--ligth);
+    /* background-color: var(--ligth); */
+}
+.text-light{
+    font-size: 1em;
+    font-weight: bold;
+}
+
+#update_product .form-group,
+#update_purchase .form-group,
+#add_purchase .form-group,
+#add_product .form-group,
+#update_sales .form-group{
+    margin: .4em;
+    /* background-color: #323830; */
+}
+
+#update_product .form-group input[type="text"],
+#update_purchase .form-group input[type="text"],
+#add_purchase .form-group input[type="text"],
+#add_product .form-group input[type="text"],
+#update_sales .form-group input[type="text"]{
+    width:100%;
+    padding: .6em 1em;
+    margin: .5em 0;
+    border: 1px solid var(--border-btn);
+    font-family: 'Barlow', sans-serif;
+    font-size: 1em;
+    border-radius: .2em;
+}
+#update_product .new_product .btn,
+#update_purchase .new_product .btn,
+#add_purchase .new_product .btn,
+#add_product .new_product .btn,
+#add_sales .new_product .btn,
+#report .new_product .btn,
+#update_sales .new_product .btn{
+    width: 100%;
+    padding:.9em 1em;
+    background-color: #16db93;
+    border: none;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: .2em;
+    margin: 1em 0 1em 0;
+}
+#update_product .new_product .btn:hover,
+#update_purchase .new_product .btn:hover,
+#add_purchase .new_product .btn:hover,
+#add_product .new_product .btn:hover,
+#add_sales .new_product .btn:hover,
+#report .new_product .btn:hover,
+#update_sales .new_product .btn:hover{
+    background-color: var(--dark);
+    color: var(--border);
+}
+.container .salesreport,
+.container .purchasereport{
+    margin:5em;
+    padding: 2em;
+    /* background-color: black; */
+}
+.container input[type="date"],
+.container input[type="text"]{
+    width:100%;
+    padding: .6em 1em;
+    margin: .5em 0;
+    border: 1px solid var(--border-btn);
+    font-family: 'Barlow', sans-serif;
+    font-size: 1em;
+    border-radius: .2em;
+}

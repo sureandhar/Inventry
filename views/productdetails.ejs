@@ -1,0 +1,39 @@
+<!-- Header -->
+<%- include('include/_header')%>
+<!-- /Header -->
+
+<!-- Main -->
+
+<main class="main">
+    <div class="product new">
+        <a href="/add_product" class="product-brand">New Product <i class="fas fa-cart-plus"></i></a>
+        <a href="/" class="product-brand">Home <i class="fas fa-home"></i></a>
+        <a href="/product-report" class="product-brand">Report <i class="fas fa-print"></i></a>
+    </div>
+    <div class="form-title">
+        <h3 class="form-title text">Product Details</h3>
+     </div> 
+
+    <form action="/" method="post">
+        <table class="table">
+            <thead class="thead-dark">
+                <tr>
+                    <th>#</th>
+                    <th>id</th>
+                    <th>Productname</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <%- include('include/_show')%>
+            </tbody>
+        </table>
+    </form>
+
+</main>
+
+<!-- /Main -->
+
+<!-- Footer -->
+<%- include('include/_footer')%>
+<!-- /Footer -->

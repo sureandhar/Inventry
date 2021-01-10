@@ -1,0 +1,45 @@
+<!-- Header -->
+<%- include('include/_header')%>
+<!-- /Header -->
+
+<!-- Main -->
+
+<main class="main">
+    <div class="product new">
+        
+        <a href="/sales" class="product-brand">Back <i class="fas fa-angle-double-left"></i></a>
+    </div>
+    <div class="form-title">
+        <h3 class="form-title text">Sales Entry</h3>
+     </div> 
+
+    
+        <table class="table">
+            <thead class="thead-dark">
+                <tr>
+                    <th>#</th>
+                    <th>Date</th>
+                    <th>Id</th>
+                    <th>Productname</th>
+                    <th>Quantity</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <%- include('include/_showsaleshistory')%>
+            </tbody>
+        </table>
+        <!-- <div class="new_product">
+        <div class="from-group">
+            <button type="submit" class="btn text-dark update">Submit</button>
+        </div>
+    </div> -->
+    
+
+</main>
+
+<!-- /Main -->
+
+<!-- Footer -->
+<%- include('include/_footer')%>
+<!-- /Footer -->

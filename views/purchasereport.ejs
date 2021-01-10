@@ -1,0 +1,43 @@
+<!-- Header -->
+<%- include('include/_header')%>
+<!-- /Header -->
+
+<!-- Main -->
+
+<main class="main">
+    <div class="product new">
+        <a href="/report" class="product-brand"><i class="fas fa-angle-double-left"></i> Back</i></a>
+    </div>
+    <div class="container" id="report">
+        <div class="purchasereport">
+        <div class="new_product">
+    <form action="idwisepurchase-report" method="post">
+        
+        <label for="sdate"></label>
+        <input type="date" id="sdate"  name="sdate" required>
+        <label for="edate"></label>
+        <input type="date" id="edate" name="edate" required>
+        <input type="text" id="sid" name="sid" required>
+        
+            <div class="from-group">
+                <br>
+                <a href="purchasereport_report" id="generate" class="btn border-shadow generate" >
+                    <span class="text-gradient"><i class="fas fa-check"></i> Full Report</i></span>
+                </a>
+                </form>
+                <br>
+                <button type="submit" class="btn text-dark update">Generate <i class="fas fa-print"></i></button>
+
+            </div>
+        </div>
+    
+    </div>
+</div>
+</main>
+
+<!-- /Main -->
+
+
+<!-- Footer -->
+<%- include('include/_footer')%>
+<!-- /Footer -->
